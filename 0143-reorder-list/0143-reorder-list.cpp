@@ -34,7 +34,7 @@ public:
         }
         ListNode* first=head;//1
         ListNode* second=reverse(slow->next);
-        slow->next=NULL; // 
+        slow->next=NULL; // break the og ll
         while(first && second)
         {
             ListNode* temp=first->next;//2
