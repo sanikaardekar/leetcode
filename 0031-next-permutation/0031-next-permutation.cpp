@@ -5,8 +5,8 @@ public:
 //         {
 //             return;
 //         }
-//         int x1; int x2;
-//         for(int i=nums.size()-1;i>0;i--)
+//         int x1,x2; 
+//         for(int i=nums.size()-1;i>=0;i--)
 //         {
 //             if(nums[i]<nums[i+1])
 //             {
@@ -20,7 +20,7 @@ public:
 //         }
 //         else{
            
-//             for(int i=nums.size()-1;i>0;i--)
+//             for(int i=nums.size()-1;i>=0;i--)
 //             {
 //                 if(nums[i]>x1)
 //                 {
@@ -28,10 +28,10 @@ public:
 //                     break;
 //                 }
 //             }
+//             swap(nums[x1],nums[x2]);
+//             sort(nums.begin()+x1+1,nums.end());
 //         }
-//         swap(nums[x1],nums[x2]);
-//         reverse(nums.begin()+x1+1,nums.end());
-        if(nums.size()==1){
+    if(nums.size()==1){
             return;
         }
         
