@@ -14,7 +14,7 @@ public:
                 break;
             }
         }
-        if(x1<0)
+        if(x1<0) //no value in x1
         {
             reverse(nums.begin(),nums.end());
         }
