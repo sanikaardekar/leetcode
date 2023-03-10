@@ -12,10 +12,10 @@ class Solution{
     //no cylcic/consecutive check
     //no diff/ target bcos there only 2 considered
     // set also no bcos 1 1 -2 gives 0
-    // hashmap? --> 
+    // hashmap? --> can, just like set
     // 4 2 -3 1 6 --> 4 6 3 4
     //2 4 -1 6 3--> 2,6, 5, 11, 14
-    //set --> 
+    //set --> set used for prefix sum so yes
     //Complete this function
     //Function to check whether there is a subarray present with 0-sum or not.
     bool subArrayExists(int arr[], int n)
