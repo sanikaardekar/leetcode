@@ -13,7 +13,8 @@ class Solution{
     //no diff/ target bcos there only 2 considered
     // set also no bcos 1 1 -2 gives 0
     // hashmap? --> 
-    //2 4 -1 6 3
+    // 4 2 -3 1 6 --> 4 6 3 4
+    //2 4 -1 6 3--> 2,6, 5, 11, 14
     //set --> 
     //Complete this function
     //Function to check whether there is a subarray present with 0-sum or not.
@@ -27,7 +28,7 @@ class Solution{
         for(int i=0;i<n;i++)
         {
             sum=sum+arr[i];
-            if(sum==0 || st.find(sum) != st.end()){ //assumed ki ek line mai hoga
+            if(sum==0 || st.find(sum) != st.end()){ 
             return true;
             }
             st.insert(sum);
