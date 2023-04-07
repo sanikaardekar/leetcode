@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //break the sent and count freq of all words
     vector<string> uncommonFromSentences(string s1, string s2) {
         unordered_map<string, int> m;
         string word;
