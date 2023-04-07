@@ -1,28 +1,21 @@
 class Solution {
 public:
+    //we 
     int countCharacters(vector<string>& words, string chars) {
         int count=0;
-        vector<int> chFreq(26, 0);
+        vector<int> chf(26,0);
+        for(auto i:chars) chf[i-'a']++;
         
-        for(auto ch : chars) chFreq[ch - 'a']++;
-        
-    
-        
-        
-        for(auto str : words){
-            
-            bool flag = true;
-            
-            vector<int> copyFreq(26, 0);
-            
-            for(auto ch : str) {
-                if(++copyFreq[ch - 'a'] > chFreq[ch - 'a']){
-                    flag = false;
+        for(auto i:words){
+            bool flag=true;
+            vector<int> wsf(26,0);
+            for(auto ii:i){
+                if(++wsf[ii-'a']>chf[ii-'a']){
+                    flag=false;
                     break;
                 }
             }
-     
-            if(flag) count += str.size();
+            if(flag) count=count+i.size();
         }
         
        
