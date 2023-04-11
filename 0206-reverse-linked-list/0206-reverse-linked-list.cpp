@@ -11,24 +11,24 @@
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        // ListNode* pp = NULL;
-        // ListNode* cp= head;
-        // ListNode* np;
-        // while(cp!=NULL){
-        //     np=cp->next;
-        //     cp->next=pp;
-        //     pp=cp;
-        //     cp=np;
-        // }
-        // return pp;
-        //base case
-        if(head==NULL || head->next==NULL)//empty ll or just one element
-        {
-            return head;
+        ListNode* pp = NULL;
+        ListNode* cp= head;
+        ListNode* np;
+        while(cp!=NULL){
+            np=cp->next;
+            cp->next=pp;
+            pp=cp;
+            cp=np;
         }
-        ListNode* nh = reverseList(head->next);
-        head->next->next=head;
-        head->next = NULL;
-        return nh;
+        return pp;
+        //base case
+        // if(head==NULL || head->next==NULL)//empty ll or just one element
+        // {
+        //     return head;
+        // }
+        // ListNode* nh = reverseList(head->next);
+        // head->next->next=head;
+        // head->next = NULL;
+        // return nh;
     }
 };
