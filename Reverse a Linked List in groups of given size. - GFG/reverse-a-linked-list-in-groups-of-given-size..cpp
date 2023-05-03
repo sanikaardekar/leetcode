@@ -54,8 +54,9 @@ class Solution
         // Complete this method
         node *prev=NULL;
         node *curr = head;
-        node *nxt = NULL;
+        node *nxt;
         int count=0;
+        //step 1
         while(curr!=NULL && count<k)
         {
             count++;
@@ -64,8 +65,10 @@ class Solution
             prev=curr;
             curr = nxt;
         }
+        //step 2
         if(nxt!=NULL)
         head->next = reverse(curr, k);
+        
         return prev;
         
     }
