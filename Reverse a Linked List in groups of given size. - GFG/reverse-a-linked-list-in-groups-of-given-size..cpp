@@ -65,7 +65,7 @@ class Solution
             curr = nxt;
         }
         if(nxt!=NULL)
-        head->next = reverse(nxt, k);
+        head->next = reverse(curr, k);
         return prev;
         
     }
