@@ -6,7 +6,7 @@ public:
             return;
         }
         int x1,x2; 
-        for(int i=nums.size()-2;i>=0;i--)
+        for(int i=nums.size()-2;i>=0;i--) //-2 taken bcos runtime, 
         {
             if(nums[i]<nums[i+1])
             {
