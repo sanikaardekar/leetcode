@@ -93,7 +93,7 @@ class Solution
     {
         // code here
         // just remove the loop without losing any nodes
-        unordered_map<Node*, int> mp;
+        unordered_map<Node* ,int> mp;
         Node* curr=head;
         Node* prev;
         while(curr!=NULL)
@@ -106,6 +106,7 @@ class Solution
             mp[curr]++;
             prev=curr;
             curr=curr->next;
+            
         }
     }
 };
