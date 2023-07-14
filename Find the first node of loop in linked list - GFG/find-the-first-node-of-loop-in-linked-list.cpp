@@ -47,22 +47,21 @@ class Solution
     int findFirstNode(Node* head)
     {
         // your code here
-        unordered_map<Node*, int> mp;
-        Node* curr=head;
-        Node* prev;
-        int res;
-        while(curr!=NULL)
-        {
-            if(mp.find(curr)!=mp.end())
-            {
-                res=curr->data;
-                return res;
-            }
-            mp[curr]++;
-            prev=curr;
-            curr=curr->next;
-        }
-        return -1;
+       Node* res;
+       unordered_map<Node*, int> mp;
+       Node* curr=head;
+       Node* prev;
+       while(curr!=NULL)
+       {
+           if(mp.find(curr)!=mp.end())
+           {
+               return curr->data;
+           }
+           mp[curr]++;
+           prev=curr;
+           curr=curr->next;
+       }
+       return -1;
     }
 };
 
