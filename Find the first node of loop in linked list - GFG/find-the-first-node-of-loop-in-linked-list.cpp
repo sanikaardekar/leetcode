@@ -47,7 +47,6 @@ class Solution
     int findFirstNode(Node* head)
     {
         // your code here
-       Node* res;
        unordered_map<Node*, int> mp;
        Node* curr=head;
        Node* prev;
