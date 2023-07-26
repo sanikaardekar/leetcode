@@ -11,12 +11,13 @@
  */
 class Solution {
 public:
-    void pot(vector<int> &ans, TreeNode* root){
+    void pot(vector<int>& ans, TreeNode* root)
+    {
         if(root!=NULL)
         {
-            pot(ans, root->left);
-            pot(ans, root->right);
-            ans.push_back(root->val);
+            pot(ans,root->left);
+        pot(ans,root->right);
+        ans.push_back(root->val); 
         }
     }
     vector<int> postorderTraversal(TreeNode* root) {
