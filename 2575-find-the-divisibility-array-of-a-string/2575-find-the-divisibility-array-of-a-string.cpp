@@ -5,7 +5,7 @@ public:
         long long modd=0;
         for(int i=0;i<word.length();i++)
         {
-            // st=word.substr(0,i+1);
+             //st=word.substr(0,i+1);
             // long long int temp=std::stoll(st);
             modd=(modd*10+word[i]-'0')%m;
             if(modd==0){
