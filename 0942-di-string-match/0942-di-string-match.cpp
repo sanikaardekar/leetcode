@@ -8,7 +8,7 @@ public:
             if(s[i]=='I') { res.push_back(j); j++;}
             else{ res.push_back(k); k--;}
         }
-        res.push_back(k);
+        res.push_back(j);
         return res;
     }
 };
