@@ -12,20 +12,6 @@ class Solution
     bool ispar(string s)
     {
         // Your code here
-        //stack used
-        // stack<char> st;
-        // for(auto it:x)
-        // {
-        //     if(it=='(' || it=='[' || it=='{') st.push(it);
-          
-        //     else if(st.empty() || it==')' && st.top()!='(' || it=='[' && st.top()!=']' || it=='{' && st.top()!='}')
-        //         return false;
-                
-                
-        //         else st.pop();
-            
-        // }
-        // return st.empty()?true:false;
         stack<char> st;
         for(auto i=s.begin();i!=s.end();i++)
         {
